@@ -8,11 +8,7 @@ streamlit
 utils
 plotly.express
 matplotlib.pyplot 
-seaborn
-sklearn.impute 
-sklearn.preprocessing
-sklearn.ensemble 
-sklearn.pipeline 
+seaborn 
 copy
 warnings
 datetime
