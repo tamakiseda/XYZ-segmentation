@@ -2,7 +2,7 @@
 altair
 numpy
 pandas
-sklearn
+scikit-learn
 base64
 pydeck
 streamlit
