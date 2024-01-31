@@ -1,6 +1,8 @@
 altair
 numpy
 pandas
+sklearn
+base64
 pydeck
 streamlit
 utils
@@ -11,3 +13,7 @@ sklearn.impute
 sklearn.preprocessing
 sklearn.ensemble 
 sklearn.pipeline 
+copy
+warnings
+datetime
+os
