@@ -1,0 +1,16 @@
+[theme]
+primaryColor = "#ba3de4"
+backgroundColor = "#fcfffd"
+secondaryBackgroundColor = "#abd1de"
+textColor = "#051790"
+font = "serif"
+
+[deprecation]
+showPyplotGlobalUse = false
+
+
+[server]
+# Max size, in megabytes, of messages that can be sent via the WebSocket
+# connection.
+# Default: 200
+maxMessageSize = 800
