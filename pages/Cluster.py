@@ -15,6 +15,8 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder, LabelEncoder, M
 from copy import deepcopy
 import warnings
 import datetime
+from sklearn.impute import SimpleImputer
+
 
 TASK = 'cluster'
 
