@@ -1,0 +1,102 @@
+{
+    "classification": {
+        "RandomForestClassifier": {
+            "n_estimators": 100,
+            "criterion": {
+                "options": [
+                    "gini",
+                    "entropy",
+                    "log_loss"
+                ],
+                "default": "gini"
+            },
+            "max_depth": 12,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "min_weight_fraction_leaf": 0.0,
+            "max_features": {
+                "options": [
+                    "sqrt",
+                    "log2",
+                    null
+                ],
+                "default": "sqrt"
+            },
+            "max_leaf_nodes": 128,
+            "bootstrap": false,
+            "n_jobs": 1,
+            "random_state": 42,
+            "warm_start": true,
+            "class_weight": null,
+            "ccp_alpha": 0.0,
+            "max_samples": null
+        }
+    },
+    "cluster": {
+        "KMeans": {
+            "n_clusters": 3,
+            "init": {
+                "options": [
+                    "k-means++",
+                    "random"
+                ],
+                "default": "k-means++"
+            },
+            "max_iter": 300,
+            "random_state": 42
+        },
+        "MiniBatchKMeans": {
+            "n_clusters": 8,
+            "init": {
+                "options": [
+                    "k-means++",
+                    "random"
+                ],
+                "default": "k-means++"
+            },
+            "n_init": "auto",
+            "random_state": 42
+        }
+    },
+    "regression": {
+        "Lasso": {
+            "alpha": 1.05,
+            "random_state": null
+        },
+        "RandomForestRegressor": {
+            "n_estimators": 100,
+            "criterion": {
+                "options": [
+                    "squared_error",
+                    "absolute_error",
+                    "friedman_mse",
+                    "poisson"
+                ],
+                "default": "squared_error"
+            },
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1
+        },
+        "DecisionTreeRegressor": {
+            "criterion": {
+                "options": [
+                    "squared_error",
+                    "friedman_mse",
+                    "absolute_error",
+                    "poisson"
+                ],
+                "default": "squared_error"
+            },
+            "splitter": {
+                "options": [
+                    "best",
+                    "random"
+                ],
+                "default": "best"
+            },
+            "max_depth": null,
+            "min_samples_split": 2
+        }
+    }
+}
