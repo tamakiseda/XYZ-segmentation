@@ -22,7 +22,7 @@
                     "k-means++",
                     "random"
                 ],
-                "default": "random"
+                "default": "k-means++"
             },
             "max_iter": 300,
             "random_state": 42
