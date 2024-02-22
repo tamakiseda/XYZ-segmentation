@@ -453,7 +453,7 @@ with tbls[1]:
         unsafe_allow_html=True)
 
     except Exception as e:
-        st.error(e)
+        #st.error(e)
         pass
 
 
