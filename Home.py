@@ -42,17 +42,45 @@ st.download_button(label='Click to Download CSV file',
 st.write("Note: After clicking the 'Click to Download CSV file' button, your browser may prompt you to download the file.")
 
 
-uploaded_file = st.file_uploader(
-    'File uploader', type=['xlsx', 'xls', 'csv'],
-    accept_multiple_files=False)
-if uploaded_file is not None:
-    st.success('File successfully uploaded!')
+# main page
+tbls = st.tabs(['Upload Manually','By IBP (In Developping)'])
+# parameters
+
+with tbls[0]:
+
+    uploaded_file = st.file_uploader(
+        'File uploader', type=['xlsx', 'xls', 'csv'],
+        accept_multiple_files=False)
+    if uploaded_file is not None:
+        st.success('File successfully uploaded!')
+
+
+with tbls[1]:
+    st.markdown("""
+    ### Main Contains:
+    - Planning Level: The attributes of selected Key figure.
+    - Key Figure: The key figure you want to analysis.
+    - Time Range: The time range of the data.
+    """)
+    
+    select_columns_pl = st.multiselect('Choose Planning Level',
+                                        options=['Product ID','Customer ID','Location ID'])
+    select_columns_kf = st.multiselect('Choose Key Figure',
+                                    options=['Actuals Shipment Qty','Open Sales Order'])
+    central_variable = st.selectbox("Choose Start Period", options=['M1 2023','M2 2023','M3 2023','M4 2023'])
+    constant_value = st.number_input("Number of the forward periods", value=5, step=1,
+                                        key='constant_value')
+    button2_clicked = st.button("Import data from IBP")
+    if button2_clicked:
+        st.write("Data Imported")
+
+
+
+
+
 
 st.markdown(
     """
-        Features of our tiny platform
-
-    **👈 Try to explore from the sidebar**
 
     ## Main Steps
 
