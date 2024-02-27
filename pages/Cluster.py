@@ -339,17 +339,17 @@ with tbls[1]:
 
         # Print centroids of each cluster
         centroids = model.cluster_centers_
-        st.write("Centroids of each cluster:")
-        centroids_df = pd.DataFrame(centroids, columns=[f"Feature_{i+1}" for i in range(centroids.shape[1])])
-        st.table(centroids_df.style.set_table_styles([
-            {'selector': 'th',
-            'props': [('background-color', '#ecf4fc'), ('color', 'black'),
-                    ('font-family', 'Arial'), ('font-size', '12px'), ('text-align', 'center')]},
-            {'selector': 'td',
-            'props': [('font-family', 'Arial'), ('font-size', '12px'), ('text-align', 'center')]},
-            {'selector': 'tr:hover',
-            'props': [('background-color', '#f5f5f5')]}
-        ]))
+        #st.write("Centroids of each cluster:")
+        #centroids_df = pd.DataFrame(centroids, columns=[f"Feature_{i+1}" for i in range(centroids.shape[1])])
+        # st.table(centroids_df.style.set_table_styles([
+        #     {'selector': 'th',
+        #     'props': [('background-color', '#ecf4fc'), ('color', 'black'),
+        #             ('font-family', 'Arial'), ('font-size', '12px'), ('text-align', 'center')]},
+        #     {'selector': 'td',
+        #     'props': [('font-family', 'Arial'), ('font-size', '12px'), ('text-align', 'center')]},
+        #     {'selector': 'tr:hover',
+        #     'props': [('background-color', '#f5f5f5')]}
+        # ]))
 
         cluster_stats = df.groupby('cluster')['CV'].agg(['min', 'max', 'mean']).reset_index()
         # Sort clusters based on mean values
