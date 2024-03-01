@@ -43,7 +43,7 @@ st.write("Note: After clicking the 'Click to Download CSV file' button, your bro
 
 
 # main page
-tbls = st.tabs(['Upload Manually','By IBP (In Developping)'])
+tbls = st.tabs(['Upload Manually','By IBP (In Developing)'])
 # parameters
 
 with tbls[0]:
