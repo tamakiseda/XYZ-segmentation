@@ -122,7 +122,6 @@ with tbls[0]:
     - Number of K: K of K-Means algorithm, number of the clusters
     - Initialization: Methods of initialize the centroid
     - Max Iteration: Max of iteration time
-    - Random State: Determines random number generation for centroid initialization
     """)
 
     with st.expander('Parameters', expanded=True):
