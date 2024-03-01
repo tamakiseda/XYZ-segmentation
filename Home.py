@@ -25,7 +25,7 @@ st.markdown("""
             """)
 
 # st.image("https://github.com/tamakiseda/streamlit-/blob/main/pic3.png?raw=true")
-st.image("./Westernacher_Logo_4.png")
+st.image("./Westernacher_Logo_5.png")
 
 
 
